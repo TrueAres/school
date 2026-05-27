@@ -1,13 +1,14 @@
+"""
 str1 = "hello world"
 name = "Richard"
 
 
-#print(str1, ", my name is", name)
+print(str1, ", my name is", name)
 
 x = 12
 x = 12 + 1
 x = x + 1
-#print(x)
+print(x)
 
 num1 = 17
 num2 = 42
@@ -17,7 +18,7 @@ if num2 > num1:
     greatest_num = num2
 if num3 > num2:
     greatest_num = num3
-#print(greatest_num)
+print(greatest_num)
 
 import math as mm
 
@@ -32,7 +33,7 @@ def function():
     print(x)
     print(global_x)
     
-#function()
+function()
 
 
 ####### C code ###############
@@ -48,7 +49,7 @@ def function():
 if True :
     x=32
 
-#print(x)
+print(x)
 
 
 flag = False
@@ -58,41 +59,41 @@ if flag :
 else :
     x=154 
 
-#print(x)
+print(x)
 
 z=40
-#if z>3:
-#    if z<10:
-#        print(z)
-#    else:
-#        print("else")
+if z>3:
+    if z<10:
+        print(z)
+    else:
+        print("else")
 
 
-#print("done")
+print("done")
 
-#tmp = int(input("Input Temp"))
+tmp = int(input("Input Temp"))
 
-#if tmp < 32:
-#    print("It's freezing!")
-#elif tmp < 61:
-#    print("It's chilly.")
-#elif tmp < 76:
-#    print("Nice wearher.")
-#else:
-#    print("It's hot!")
+if tmp < 32:
+    print("It's freezing!")
+elif tmp < 61:
+    print("It's chilly.")
+elif tmp < 76:
+    print("Nice wearher.")
+else:
+    print("It's hot!")
 
-#i=0 
-#while i < 6:
-#    print(i := i+1)
+i=0 
+while i < 6:
+    print(i := i+1)
 
-#i = 0
-#while (i < 10):
-#	print(i)
-#	i += 1
+i = 0
+while (i < 10):
+	print(i)
+	i += 1
 
-#fruits = ["apple", "banana", "cherry"]
-#for fruit in fruits:
-#    print(fruit)
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
 
 
 
@@ -112,7 +113,7 @@ for i in range(0,n):
 n=int(input())
 for i in range (0,n):
     for j in range(0,i+1):
-        print("*", end="")
+       print("*", end="")
     print()
 
 
@@ -124,3 +125,11 @@ for word in ll:
             count += 1
 
 print(count)
+
+
+while True:
+    stdin = input("enter quit:")
+    if stdin.lower() == "quit":
+        break
+        
+"""
