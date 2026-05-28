@@ -131,5 +131,10 @@ while True:
     stdin = input("enter quit:")
     if stdin.lower() == "quit":
         break
-        
+
+stdin = ''
+while stdin.lower() != "q":
+    print(stdin)
+    stdin = input("enter Q for quit:")
+
 """
