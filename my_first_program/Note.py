@@ -137,4 +137,43 @@ while stdin.lower() != "q":
     print(stdin)
     stdin = input("enter Q for quit:")
 
+    
+
+
+# Read input and split input into tokens
+tokens = input().split()
+
+sequence_list = []
+for token in tokens:
+    sequence_list.append(int(token))
+
+print(f"Sequence: {sequence_list}")
+
+
+for i in range(1, len(sequence_list) - 1):
+    prev = sequence_list[i - 1]
+    current = sequence_list[i]
+    next = sequence_list[i + 1]
+
+    if current < prev and current < next:
+        print("Dunk:", prev, current, next)
+         
+        
+favorite_food = {}
+
+
+while True:
+    entry = input().split()
+
+    if entry[0].lower() == "quit":
+        break
+    key = entry[0]
+    value = entry[1]
+
+    favorite_food[key] = value
+
+print("Favorite food:")
+print(favorite_food)
+
+
 """
