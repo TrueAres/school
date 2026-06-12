@@ -175,5 +175,54 @@ while True:
 print("Favorite food:")
 print(favorite_food)
 
+orders_record = {}
+
+input_line = input()
+while input_line != "quit":
+    name, food = input_line.split()
+    orders_record[name] = food
+    input_line = input()
+
+sorted_orders = sorted(orders_record.items())
+
+for name, food in sorted_orders:
+    print(name, food)
+
+email = input("Enter your email: ")
+str = email.find(".")
+str2 =email.find("@")
+str3 = email.find(".", str2)
+address = email[str3+1:]
+first = email[:str]
+last = email[str + 1:str2]
+domain = email[str2+1:str3]
+print(f"{first} {last} {domain} {address}")
+
+
+import math
+def area(s):
+    return math.sqrt(s * (s - a) * (s - b) * (s - c))
+a=(int(input("")))
+b=(int(input("")))
+c=(int(input("")))
+s=(a+b+c)/2
+print(area(s))
+
+import math
+
+def hero_f(a,b,c):
+    s = (a + b + c) / 2
+    A = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    return A
+x = hero_f(1,2,3)
+print(x)
 
 """
+
+def count_down(count:int)-> None:
+    print(count)
+    if count ==0: return
+    count_down(count-1)
+print("Count down") 
+count_down(10)
+print("blast off")
